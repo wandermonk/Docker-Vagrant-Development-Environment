@@ -60,6 +60,18 @@ Before running the below commands open git bash as administrator user.
     go get -u github.com/github/hub
     go get -u github.com/vmware/govmomi/govc
 
+# Accessing vagrant box from putty
+
+* vagrant ssh-config
+* Run "vagrant ssh-config" in your Project Folder to locate where your Identityfile (public_key) is. Notice: $HOSTNAME $PORT $LOGINNAME
+* Open the PuTTYgen utility;
+* Click on the Load button;
+* open the Identityfile (it doesn't have an extension and that's fine with PuTTYgen)
+* Toward the bottom of the PuTTYgen dialog box, change the value in the Number of bits in a generated key: field to 2048, RSA is fine
+* Save the file (use a $NEW name and the .ppk extension).
+* Then, launch PuTTY and enter the following connection information:
+
+
 
 
 
